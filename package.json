@@ -1,5 +1,5 @@
 {
-  "name": "nodepccc",
+  "name": "io_nodepccc",
   "description": "Routine to communicate with Allen-Bradley PLCs",
   "version": "0.1.3",
   "author": {
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/plcpeople/nodepccc"
+    "url": "https://github.com/jledun/nodepccc.git"
   },
   "main": "nodePCCC.js",
   "dependencies": {
