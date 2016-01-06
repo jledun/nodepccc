@@ -156,6 +156,17 @@ NodePCCC.prototype.connectNow = function(cParam, suppressCallback) { // TODO - i
 		self.connectError.apply(self, arguments);
 	});
 	
+	self.isoclient.on('timeout', function(){
+		self.connectError.apply(self, arguments);
+	});
+	
+	self.isoclient.on('end', function(){
+		self.connectError.apply(self, arguments);
+	});
+	
+	self.isoclient.on('close', function(){
+	});
+	
 	outputLog('<initiating a new connection>',1,self.connectionID);  
 	outputLog('Attempting to connect to host...',0,self.connectionID);
 }
