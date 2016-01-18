@@ -1361,7 +1361,7 @@ NodePCCC.prototype.readResponse = function(data, foundSeqNum) {
 		// Inform our user that we are done and that the values are ready for pickup.
 
 		outputLog("We are calling back our readDoneCallback.",1,self.connectionID);
-		if (typeof(self.readDoneCallback === 'function')) {
+		if (typeof(self.readDoneCallback) === 'function') {
 			self.readDoneCallback(anyBadQualities, dataObject, self.isoConnectionState !== 4);
 		}
 		if (self.resetPending) {
