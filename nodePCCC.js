@@ -2514,6 +2514,7 @@ function PLCItem() { // Object
 			return false;
 		case "C":
 		case "CHAR":
+		case "STRING":
 			// Convert to string.  
 			return "";
 		default:
